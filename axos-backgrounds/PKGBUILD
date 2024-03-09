@@ -1,0 +1,12 @@
+pkgname="axos-backgrounds"
+pkgver="2.0"
+pkgrel="1"
+pkgdesc="axos backgrounds"
+arch=("x86_64")
+
+
+package(){
+   mkdir -p ${pkgdir}/
+   cp -r ${srcdir}/* ${pkgdir}/
+
+}

@@ -1,0 +1,18 @@
+# Maintainer: Ardox
+
+pkgname=plymouth-theme-axos
+pkgver=2.0
+pkgrel=1
+pkgdesc="Default plymouth theme for AxOS"
+arch=('any')
+license=('GPL3')
+depends=('plymouth')
+options=(!strip !emptydirs)
+
+prepare() {
+	cp -af ../files/. "$srcdir"
+}
+
+package() {
+	(find axos -type f -exec install -Dm 644 "{}" "$pkgdir/usr/share/plymouth/themes/{}" \;)
+}
