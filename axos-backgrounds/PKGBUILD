@@ -1,5 +1,5 @@
 pkgname="axos-backgrounds"
-pkgver="2.1"
+pkgver="2.2"
 pkgrel="1"
 pkgdesc="axos backgrounds"
 arch=("x86_64")
