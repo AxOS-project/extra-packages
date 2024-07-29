@@ -5,8 +5,8 @@
 ## About AxOS
 
 ## Get ISO Version
-if [[ -e '/version' ]]; then
-	version="v`cat /version | cut -d'.' -f1`.`cat /version | cut -d '.' -f2`"
+if [[ -e '/etc/os-release' ]]; then
+	version="v`grep '^VERSION=' /etc/os-release | cut -d'=' -f2`"
 else
 	version='rolling'
 fi
@@ -19,6 +19,6 @@ yad --title='About AxOS' --window-icon='axos-logo' \
 	--comments="The Linux experience, enhanced." \
 	--copyright="Copyright 2020-`date +'%Y'`, Ardox <@levraiardox>" \
 	--license='GPL3' \
-	--website='https://axos-project.github.io' \
-	--website-label='axos-project.github.io' \
+	--website='http://axos-project.com/' \
+	--website-label='axos-project.com' \
 	--authors="Ardox <@levraiardox>"

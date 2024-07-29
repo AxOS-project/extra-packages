@@ -2,6 +2,6 @@
 Name=About AxOS
 Comment=About AxOS
 Exec=about-os
-Icon=AxOS-logo
+Icon=axos-logo
 Type=Application
-Categories=System;
+
